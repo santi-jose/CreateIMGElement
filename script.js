@@ -1,14 +1,17 @@
 // create image element
 let img = document.createElement("img");
 
-// select div in html to insert image into 
-let div = document.querySelector("div");
+// create div in html to insert image into 
+let div = document.createElement("div");
 
 // set styling for img element
 img.style = "width: 100%; height: 100%; margin: auto;"
 
 // set image source attribute
 img.src = "https://i.pinimg.com/originals/e4/18/c0/e418c07009871848e33c2126c33056c8.jpg";
+
+// append div to body
+document.body.append(div);
 
 // append image element to div
 div.append(img);
